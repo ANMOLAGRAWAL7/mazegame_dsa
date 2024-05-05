@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="/mazeproject/main.css" />
+</head>
+<body>
+    <div id="mazeContainer">
+        <canvas id="mazeCanvas" height="360px" width="600px"></canvas>
+    </div>
+    <div id =resetbutton>
+        <button id="reset">RESET MAZE</button>
+    </div>
+    <div class="buttonContainer">
+        <button id="solveDFSButton">Solve Maze (DFS)</button>
+        <button id="solveBFSButton">Solve Maze (BFS)</button>
+        <button id="solveAStarButton">Solve Maze (A*)</button>
+    </div>
+    
+    <div class="solveTime" id="dfsTime" style="display: none;">Time taken by DFS: </div>
+    <div class="solveTime" id="bfsTime" style="display: none;">Time taken by BFS: </div>
+    <div class="solveTime" id="aStarTime" style="display: none;">Time taken by A*: </div>
+    
+    <script type="text/javascript" src="/mazeproject/src/index.js"></script>
+</body>
+</html>

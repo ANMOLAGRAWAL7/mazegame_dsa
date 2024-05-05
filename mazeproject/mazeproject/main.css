@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+#mazeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjusted height */
+    width: 100%;
+}
+
+#mazeCanvas {
+    border: 1px solid black;
+    height: fit-content;
+    max-width: 100%; /* Ensures canvas doesn't overflow its container */
+    max-height: 100%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttonContainer button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#solveDFSButton{
+    color: whitesmoke;
+    background-color: darkred;
+    border-color: yellowgreen;
+    padding-bottom: 10px;
+}
+#reset{
+    color: whitesmoke;
+    background-color:cornflowerblue;
+    border-color: orangered;
+    color: black;
+    border-radius: 5px;
+}
+#solveBFSButton{
+    color: whitesmoke;
+    background-color: darkred;
+    border-color: yellowgreen;
+    padding-bottom: 10px;
+}
+#solveAStarButton{
+    color: whitesmoke;
+    background-color: darkred;
+    border-color: yellowgreen;
+    padding-bottom: 10px;
+}
+.solveTime {
+    text-align: center;
+    font-size: 18px;
+    color:darkblue;
+    padding-top: 10px;
+}
+#resetbutton{
+    display: flex;
+    justify-content: center;
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Maze Solver</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A3E6EA3E567FCF493467B4EADE7F33FD08CF4228318492B6B79BA90714704BBB/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #welcomeMessage {
+            margin-top: 20vh;
+            font-size: 24px;
+            color: purple;
+        }
+        #startButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color:gold;
+            border-color: black;
+            color: black;
+            margin-top: 5.7%;
+            transition-duration: 0.4s;
+            
+        }
+        .button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding:10px 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 5.7%;
+        }
+        .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+</head>
+<body>
+    <div id="welcomeMessage">
+        <!-- <h1>Welcome to Maze Solver</h1> -->
+        <!-- <p>Click the button below to start solving the maze!</p> -->
+        <button id="startButton"class="button" style="vertical-align:middle"><span>Start</span></button>
+    </div>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', () => {
+            window.location.href = '/mazeproject/src/maze.html';
+        });
+    </script>
+</body>
+</html>
